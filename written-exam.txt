@@ -1,0 +1,38 @@
+Name: Rhonnie C. Ellos
+BSIT-3A
+Midterm Exam
+
+1. What is the primary operational difference between git fetch and git pull?
+Answer: get fetch download changes from a repository while git pulll
+
+2. You have uncommitted changes in your working directory and need to temporarily switch another branch. 
+Which workflow prevents git from blocking the checkout due file overwrite?
+Answer: git stash
+
+3. When executing a git merge--no-ff command, what specific behavior is enforced by git?
+Answer: it forces git to generate new merge commit even if a fast-forward merge is possible, preserving the explicit history of the branch  
+
+4. What happens when you check out a specific commit hash directive(e,g,git checkout alb2c3d) instead of a branch name?
+Answer: directs git into a detached head state. detaching head from any branch so subsequent commits are't tracked on a named branch
+
+5. You need to apply a specific bug-fix commit from a development branch onto stable release branch without merging the entire branch history. 
+Which command should you use?
+Answer: git cherry-pick <commit-hash> 
+
+6. After performing a destructive git reset --hard operation, your realize you lost recent commit that were not on any branch. 
+Which utility can retrieve these dangling commits?
+Answer: git reflog
+
+7. You want to remove untracked files and directories from your working tree, including ignored files listed in .gitignore.
+Which command flag combination achieves this?
+Answer: git clean -fdx 
+
+8. You need to undo a public commit that has already been pushed to a shared remote repository without altering the existing commit history or disarupting collaborators.
+Which command is appropriate?
+Answer: git revert <commit - hash>
+
+9. You want to  identify the specific commit that introduced a regrassion bug in a codebase with hundreds of historical comit. which utility automates this binary search process?
+Answer: git-bisect
+
+10. What is the function of the awend flag when used with git commit?
+Answer: git commit 
